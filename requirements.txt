@@ -1,5 +1,6 @@
 Django==4.0.2
-djangorestframework
+requests
+bs4
 django-environ
 dj-database-url
 psycopg2-binary
