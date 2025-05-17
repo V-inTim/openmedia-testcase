@@ -1,4 +1,4 @@
-# Тестовое задание "Форма обратной связи"
+# Тестовое задание "Сервис парсинга страниц"
 
 Написано api трех запросов.\
 Вид запросов и ответов соответствует условию.\
@@ -39,7 +39,7 @@ python manage.py runserver
 ```
 ## API
 Запрос на парсинг и сохранение страницы
-GET http://localhost:8000/page/create
+GET http://localhost:8000/page/create \
 **Запрос:**
 ```json
 {
@@ -54,7 +54,7 @@ GET http://localhost:8000/page/create
 }
 ```
 Запрос на получение страницы
-POST http://localhost:8000/page/ **int:pk**
+POST http://localhost:8000/page/ **int:pk** \
 **Ответ:**
 ```json
 // 200
@@ -66,7 +66,7 @@ POST http://localhost:8000/page/ **int:pk**
 }
 ```
 Запрос на получение страницы
-POST http://localhost:8000/page/list&order=h1
+POST http://localhost:8000/page/list&order=h1 \
 **Ответ:**
 ```json
 // 200
