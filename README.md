@@ -30,6 +30,7 @@ POST http://localhost:8000/page/create \
     "id": "4"
 }
 ```
+Запрос на получение страницы \
 GET http://localhost:8000/page/ **int:pk** \
 **Ответ:**
 ```json
@@ -41,8 +42,9 @@ GET http://localhost:8000/page/ **int:pk** \
     "a": ["link"]
 }
 ```
-Запрос на получение страницы
+Запрос на получение страниц \
 GET http://localhost:8000/page/list&order=h1 \
+order - опционально \
 **Ответ:**
 ```json
 // 200
